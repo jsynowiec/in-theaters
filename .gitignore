@@ -11,3 +11,6 @@ pids
 
 # Dependency directories
 node_modules
+
+# Coverage
+coverage

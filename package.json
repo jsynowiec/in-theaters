@@ -11,14 +11,20 @@
     "request-promise": "^3.0.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "~2.13.1",
     "eslint-config-airbnb": "~9.0.1",
     "eslint-plugin-import": "~1.10.2",
     "eslint-plugin-jsx-a11y": "~1.5.5",
-    "eslint-plugin-react": "~5.2.2"
+    "eslint-plugin-react": "~5.2.2",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "nock": "^8.0.0"
   },
   "scripts": {
-    "start": "node server/main.js"
+    "start": "node server/main.js",
+    "test": "mocha tests/**/*[sS]pec.js",
+    "test-coverage": "istanbul cover _mocha -- -R spec tests/**/*[sS]pec.js"
   },
   "repository": {
     "type": "git",
