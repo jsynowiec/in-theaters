@@ -5,10 +5,21 @@
   "engines": {
     "node": ">=6.2.0"
   },
-  "main": "",
-  "dependencies": {},
-  "devDependencies": {},
-  "scripts": {},
+  "main": "server/main.js",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "request-promise": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "~2.13.1",
+    "eslint-config-airbnb": "~9.0.1",
+    "eslint-plugin-import": "~1.10.2",
+    "eslint-plugin-jsx-a11y": "~1.5.5",
+    "eslint-plugin-react": "~5.2.2"
+  },
+  "scripts": {
+    "start": "node server/main.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jsynowiec/in-theaters.git"
