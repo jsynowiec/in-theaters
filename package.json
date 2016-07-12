@@ -1,0 +1,22 @@
+{
+  "name": "in-theaters",
+  "version": "0.1.0",
+  "description": "Progressive web app showing new movies in theaters",
+  "engines": {
+    "node": ">=6.2.0"
+  },
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsynowiec/in-theaters.git"
+  },
+  "author": "Jakub Synowiec <jakub@jakubsynowiec.info> (https://jakubsynowiec.info)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsynowiec/in-theaters/issues"
+  },
+  "homepage": "https://github.com/jsynowiec/in-theaters#readme"
+}
