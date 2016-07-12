@@ -29,7 +29,9 @@
   "scripts": {
     "start": "node server/main.js",
     "test": "mocha tests/**/*[sS]pec.js",
-    "test-coverage": "istanbul cover _mocha -- -R spec tests/**/*[sS]pec.js"
+    "lint": "eslint server/**/*.js tests/**/*.js",
+    "test-coverage": "istanbul cover _mocha -- -R spec tests/**/*[sS]pec.js",
+    "pretest": "npm run lint --silent"
   },
   "repository": {
     "type": "git",
