@@ -8,9 +8,11 @@ const errors = require('./messages/errors');
 
 const server = new Hapi.Server();
 
+const config = require('./config');
+
 server.connection({
-  host: '0.0.0.0',
-  port: process.env.PORT || 8080,
+  host: config.get('/host'),
+  port: config.get('/port') || 8080,
 });
 
 server.route({
@@ -31,24 +33,9 @@ server.route({
   },
 });
 
-const options = {
-  ops: {
-    interval: 1000,
-  },
-  reporters: {
-    console: [{
-      module: 'good-squeeze',
-      name: 'Squeeze',
-      args: [{ log: '*', response: '*' }],
-    }, {
-      module: 'good-console',
-    }, 'stdout'],
-  },
-};
-
 server.register({
   register: good,
-  options,
+  options: config.get('/good/options'),
 }, (err) => {
   if (err) {
     server.log(['error'], err);

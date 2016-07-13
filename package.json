@@ -8,6 +8,7 @@
   "main": "server/main.js",
   "dependencies": {
     "cheerio": "~0.20.0",
+    "confidence": "^3.0.1",
     "good": "~7.0.1",
     "good-console": "~6.1.2",
     "good-squeeze": "~4.0.0",
@@ -28,9 +29,9 @@
   },
   "scripts": {
     "start": "node server/main.js",
-    "test": "mocha tests/**/*[sS]pec.js",
+    "test": "NODE_ENV=testing mocha tests/**/*[sS]pec.js",
     "lint": "eslint server/**/*.js tests/**/*.js",
-    "test-coverage": "istanbul cover _mocha -- -R spec tests/**/*[sS]pec.js",
+    "test-coverage": "NODE_ENV=testing istanbul cover _mocha -- -R spec tests/**/*[sS]pec.js",
     "pretest": "npm run lint --silent"
   },
   "repository": {
