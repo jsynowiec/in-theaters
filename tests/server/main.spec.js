@@ -1,4 +1,5 @@
 /* eslint-env node, mocha */
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 const expect = require('chai').expect;
 const nock = require('nock');
 
