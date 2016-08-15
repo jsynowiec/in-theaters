@@ -32,7 +32,7 @@
   "scripts": {
     "start": "node server/main.js",
     "test": "NODE_ENV=testing mocha tests/**/*[sS]pec.js",
-    "lint": "eslint server/**/*.js tests/**/*.js",
+    "lint": "eslint server/**/*.js client/**/*.js tests/**/*.js",
     "test-coverage": "NODE_ENV=testing istanbul cover _mocha -- -R spec tests/**/*[sS]pec.js",
     "pretest": "npm run lint --silent"
   },
