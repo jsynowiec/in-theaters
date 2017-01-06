@@ -4,6 +4,8 @@
 
 # In Theaters
 
+Google Showtimes was discontinued on November 1, 2016. This doesn't work anymore until I find another data source.
+
 ## Introduction
 In Theaters is a [Progressive Web App](https://developers.google.com/web/progressive-web-apps/) that shows new movies in theaters and their showtimes nearby. This project is created for demonstration and learning purpose.
 
